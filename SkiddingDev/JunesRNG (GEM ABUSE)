@@ -1,3 +1,5 @@
+wait(4)
+print("loaded!")
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer

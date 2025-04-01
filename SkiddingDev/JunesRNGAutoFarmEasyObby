@@ -1,10 +1,11 @@
 
 -- JunesRNGPrivateAutoFarm
 
-queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
-queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/nbamwyd/Script/refs/heads/main/SkiddingDev/JunesRNGPrivateAutoFarm'))()")
+
 wait(3)
 print("loaded!")
+queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/nbamwyd/Script/refs/heads/main/SkiddingDev/JunesRNGPrivateAutoFarm'))()")
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer

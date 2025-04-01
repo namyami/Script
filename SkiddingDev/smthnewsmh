@@ -7,8 +7,8 @@ if not Character then
 end
 
 
-local StartTimer = workspace.Map.StartTimer
-local StopTimer = workspace.Map.Hitbox
+local StartTimer = workspace:WaitForChild("Map", 50).StartTimer
+local StopTimer = workspace:WaitForChild("Map", 50).Hitbox
 
 local function Activator()
     if game.PlaceId ~= 16883974868 and game.PlaceId == 17297111758 then

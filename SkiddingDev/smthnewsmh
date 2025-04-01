@@ -1,8 +1,11 @@
-task.wait(3)
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local Character = LocalPlayer.Character
+if not Character then
+    Character = LocalPlayer.CharacterAdded:Wait()
+end
+
 
 local StartTimer = workspace.Map.StartTimer
 local StopTimer = workspace.Map.Hitbox
